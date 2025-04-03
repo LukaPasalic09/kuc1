@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    .container {
+        display: grid;
+        grid-template-columns: 750px 750px ;
+        grid-template-rows: 100px 100px 350px 350px;
+        background-color: rgb(255, 255, 255);
+        height: 900px;
+        width: 1500px;
+        gap: 5px;
+    }
+    div {
+        text-align: center;
+    }
+    .header {
+        grid-column: span 2;
+        background-color: blue;
+        padding: 20px;
+        border: 3px solid blue;
+    }
+    .path {
+        grid-column: span 2;
+        background-color: pink;
+        border: 3px solid pink;
+    }
+    .content1 {
+        grid-column: span 2;
+        background-color: gray;
+        border: 3px solid gray;
+    }
+    .content2 {
+        background-color: gray;
+        border: 3px solid gray;
+    }
+    .content3 {
+        background-color: gray;
+        border: 3px solid gray;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="path">path</div>
+        <div class="content1">content1</div>
+        <div class="content2">content2</div>
+        <div class="content3">content3</div>
+      </div>
+</body>
+</html>
